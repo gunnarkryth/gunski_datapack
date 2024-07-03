@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 10,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 901
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Coin",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Worth its weight in gold!"
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 903
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Key",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "For every key, there is a lock."
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
