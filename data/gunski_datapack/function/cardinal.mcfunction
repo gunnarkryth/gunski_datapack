@@ -1,0 +1,1 @@
+execute if block ~ ~ ~ chest[facing=north] run data merge entity @s {Rotation:[-180]}
