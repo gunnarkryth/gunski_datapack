@@ -33,7 +33,7 @@ scoreboard objectives add lock_difficulty dummy "Lock difficulty"
 scoreboard objectives add coin_flip dummy "Coin flip result"
 
 
-say test
-
+# Give custom items
+function gunski_datapack:give
 
 tellraw @a "Datapack: done!"
