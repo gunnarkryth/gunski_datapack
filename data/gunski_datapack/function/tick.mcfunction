@@ -21,26 +21,31 @@ execute as @a[scores={select_race=2}] run function gunski_datapack:elf
 execute as @a[scores={select_race=3}] run function gunski_datapack:dwarf
 execute as @a[scores={select_race=4}] run function gunski_datapack:gnome
 
-# Locks
+
 # Yellow
-execute as @e[tag=lock_yellow] on target run function gunski_datapack:lock_yellow_interact
-execute as @e[tag=lock_yellow] on attacker run function gunski_datapack:lock_yellow_interact
-function gunski_datapack:lock_yellow_setup
+execute as @e[tag=lock_yellow] on target run function gunski_datapack:lock/yellow/lock_yellow_interact
+execute as @e[tag=lock_yellow] on attacker run function gunski_datapack:lock/yellow/lock_yellow_interact
+function gunski_datapack:lock/yellow/lock_yellow_setup
 # Red
-execute as @e[tag=lock_red] on target run function gunski_datapack:lock_red_interact
-execute as @e[tag=lock_red] on attacker run function gunski_datapack:lock_red_interact
-function gunski_datapack:lock_red_setup
+function gunski_datapack:lock/red/lock_red_setup
+
 # Purple
 execute as @e[tag=lock_purple] on target run function gunski_datapack:lock_purple_interact
 execute as @e[tag=lock_purple] on attacker run function gunski_datapack:lock_purple_interact
 function gunski_datapack:lock_purple_setup
 
+# Locks
+execute as @e[tag=lock] on target run function gunski_datapack:lock/lock_interact
+execute as @e[tag=lock] on attacker run function gunski_datapack:lock/lock_interact
+function gunski_datapack:lock/lock_setup
 
 
 # Coins
-execute as @e[type=item,nbt={OnGround:1b, Item:{id:"minecraft:glistering_melon_slice",count:1,components:{"minecraft:custom_model_data":901}}}] at @s unless entity @s[tag=activated] run function gunski_datapack:coin
+execute as @e[type=item,nbt={OnGround:1b, Item:{id:"minecraft:glistering_melon_slice",count:1,components:{"minecraft:custom_model_data":900}}}] at @s unless entity @s[tag=activated] run function gunski_datapack:coin
+
+# Collector
+execute as @e[tag=new_collector] run function gunski_datapack:collector_setup
+execute as @e[tag=collector] run function gunski_datapack:collector
 
 
-
-
-execute as @e[type=minecraft:interaction] run function gunski_datapack:interaction
+execute as @e[type=minecraft:interaction] at @s run function gunski_datapack:interaction

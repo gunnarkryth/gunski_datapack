@@ -1,0 +1,6 @@
+
+# Unlock
+execute as @e[tag=lock_yellow] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:glistering_melon_slice",components:{"minecraft:custom_data":{key_yellow:1}}}}] on attacker run scoreboard players set @n[type=interaction,tag=lock] lock_difficulty 0
+execute as @e[tag=lock_yellow] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:glistering_melon_slice",components:{"minecraft:custom_data":{key_yellow:1}}}}] on attacker unless entity @s[gamemode=creative] run item replace entity @s weapon.mainhand with air
+execute as @e[tag=lock_yellow] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:glistering_melon_slice",components:{"minecraft:custom_data":{key_yellow:1}}}}] on target run scoreboard players set @n[type=interaction,tag=lock] lock_difficulty 0
+execute as @e[tag=lock_yellow] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:glistering_melon_slice",components:{"minecraft:custom_data":{key_yellow:1}}}}] on target unless entity @s[gamemode=creative] run item replace entity @s weapon.mainhand with air

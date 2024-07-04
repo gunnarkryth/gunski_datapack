@@ -1,10 +1,4 @@
-# Game master
-execute at @a[tag=game_master] run data merge entity @n[type=interaction,distance=..2,tag=lock_red] {width:0f,height:0f}
-execute at @a[tag=game_master] run data merge entity @n[type=interaction,distance=2..3,tag=lock_red] {width:1.1f,height:1.1f}
-
-
-
-execute as @e[tag=new_lock_red] run function gunski_datapack:randomize_lock
+execute as @e[tag=new_lock_red] run function gunski_datapack:lock/lock_randomize
 execute as @e[tag=lock_1] run scoreboard players set @s lock_difficulty 1
 execute as @e[tag=lock_2] run scoreboard players set @s lock_difficulty 2
 execute as @e[tag=lock_3] run scoreboard players set @s lock_difficulty 3
@@ -42,5 +36,3 @@ execute as @e[tag=lock_red] at @s if block ~ ~ ~ #doors run data merge entity @s
 execute as @e[tag=new_lock_red] run tag @s remove new_lock_red
 
 
-# Remove stray locks
-execute as @e[tag=lock_red] at @s unless entity @n[type=item_display,tag=lock_red,distance=..1.5] run kill @s
