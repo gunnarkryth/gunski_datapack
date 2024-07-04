@@ -22,9 +22,18 @@ execute as @a[scores={select_race=3}] run function gunski_datapack:dwarf
 execute as @a[scores={select_race=4}] run function gunski_datapack:gnome
 
 # Locks
-execute as @e[tag=lock] on target run function gunski_datapack:lock_interact
-execute as @e[tag=lock] on attacker run function gunski_datapack:lock_interact
-function gunski_datapack:lock_setup
+# Yellow
+execute as @e[tag=lock_yellow] on target run function gunski_datapack:lock_yellow_interact
+execute as @e[tag=lock_yellow] on attacker run function gunski_datapack:lock_yellow_interact
+function gunski_datapack:lock_yellow_setup
+# Red
+execute as @e[tag=lock_red] on target run function gunski_datapack:lock_red_interact
+execute as @e[tag=lock_red] on attacker run function gunski_datapack:lock_red_interact
+function gunski_datapack:lock_red_setup
+# Purple
+execute as @e[tag=lock_purple] on target run function gunski_datapack:lock_purple_interact
+execute as @e[tag=lock_purple] on attacker run function gunski_datapack:lock_purple_interact
+function gunski_datapack:lock_purple_setup
 
 
 
