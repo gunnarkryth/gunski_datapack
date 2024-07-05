@@ -6,7 +6,7 @@ give @a[tag=game_master] glistering_melon_slice[max_stack_size=1,item_name='{"it
 
 # Red
 # Lock
-give @a[tag=game_master] ghast_spawn_egg[can_place_on={predicates:[{blocks:"chest"},{blocks:"barrel"},{blocks:"trapped_chest"},{blocks:"shulker_box"}],show_in_tooltip:true},item_name='{"italic":false,"text":"Red lock lvl 1"}',custom_model_data=911,entity_data={id:"minecraft:interaction",width:1.1f,height:1.1f,Tags:["lock","new_lock_red","lock_red","lock_1"]}] 1
+give @a[tag=game_master] ghast_spawn_egg[can_place_on={predicates:[{blocks:"chest"},{blocks:"barrel"},{blocks:"trapped_chest"},{blocks:"shulker_box"}],show_in_tooltip:true},item_name='{"italic":false,"text":"Red lock lvl 30"}',custom_model_data=911,entity_data={id:"minecraft:interaction",width:1.1f,height:1.1f,Tags:["lock","new_lock_red","lock_red","lock_30"]}] 1
 
 #Lock pick
 give @a[tag=game_master] glistering_melon_slice[max_stack_size=1,item_name='{"italic":false,"text":"Lock pick"}',lore=['{"text":"Where there is a will, there is a way."}'],custom_model_data=930,custom_data={lock_pick:1}] 1
@@ -26,3 +26,8 @@ give @a[tag=game_master] ghast_spawn_egg[item_name='{"italic":false,"text":"Hush
 
 # Coin
 give @a[tag=game_master] glistering_melon_slice[item_name='{"italic":false,"text":"Coin"}',lore=['{"text":"Worth its weight in gold!"}'],custom_model_data=900] 1
+
+# Swords
+give Gunski minecraft:iron_sword[minecraft:custom_model_data=900] 1
+give Gunski minecraft:iron_sword[minecraft:custom_model_data=910] 1
+give Gunski minecraft:iron_sword[minecraft:custom_model_data=911] 1

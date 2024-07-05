@@ -34,7 +34,7 @@ scoreboard objectives add coin_flip dummy "Coin flip result"
 
 
 # Give custom items
-function gunski_datapack:give
+# function gunski_datapack:give
 
 # Husher
 scoreboard objectives add activated dummy "Activated"

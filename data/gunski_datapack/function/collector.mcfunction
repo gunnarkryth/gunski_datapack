@@ -4,6 +4,7 @@ execute at @s if block ~ ~ ~ air if entity @e[type=item,nbt={Item:{id:"minecraft
 
 
 function gunski_datapack:collector_teleport
+# execute at @n[type=item,nbt={OnGround:1b}] run schedule function gunski_datapack:collector_teleport 1s
 
 
 execute at @s if block ~ ~ ~ air run playsound block.glass.break block @a ~ ~ ~ 1 1

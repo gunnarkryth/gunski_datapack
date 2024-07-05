@@ -2,9 +2,11 @@ execute as @e[tag=new_lock_red] run function gunski_datapack:lock/lock_randomize
 execute as @e[tag=lock_1] run scoreboard players set @s lock_difficulty 1
 execute as @e[tag=lock_2] run scoreboard players set @s lock_difficulty 2
 execute as @e[tag=lock_3] run scoreboard players set @s lock_difficulty 3
+execute as @e[tag=lock_30] run scoreboard players set @s lock_difficulty 30
 execute as @e[tag=new_lock_red] run tag @s remove lock_1
 execute as @e[tag=new_lock_red] run tag @s remove lock_2
 execute as @e[tag=new_lock_red] run tag @s remove lock_3
+execute as @e[tag=new_lock_red] run tag @s remove lock_30
 
 
 # Single chest
