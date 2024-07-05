@@ -47,5 +47,9 @@ execute as @e[type=item,nbt={OnGround:1b, Item:{id:"minecraft:glistering_melon_s
 execute as @e[tag=new_collector] run function gunski_datapack:collector_setup
 execute as @e[tag=collector] run function gunski_datapack:collector
 
+# Husher
+execute as @e[tag=new_husher] run function gunski_datapack:husher_setup
+execute as @e[tag=husher] run function gunski_datapack:husher
+
 
 execute as @e[type=minecraft:interaction] at @s run function gunski_datapack:interaction

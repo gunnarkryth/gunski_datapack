@@ -20,6 +20,9 @@ give @a[tag=game_master] glistering_melon_slice[max_stack_size=1,item_name='{"it
 # Collector
 give @a[tag=game_master] ghast_spawn_egg[custom_name='{"italic":false,"text":"Collector"}',lore=['{"text":"Like a hopper but special and more finicky."}'],custom_model_data=1000,entity_data={id:"minecraft:item_display",width:1.001f,height:1.001f,Tags:["collector","new_collector"],item:{id:"minecraft:glistering_melon_slice",count:1,components:{"minecraft:custom_model_data":1000}}}] 1
 
+# Husher
+give @a[tag=game_master] ghast_spawn_egg[item_name='{"italic":false,"text":"Husher"}',lore=['{"text":". . ."}'],custom_model_data=1010,entity_data={id:"minecraft:item_display",Tags:["husher","new_husher"],item:{id:"minecraft:decorated_pot",count:1,components:{"minecraft:custom_model_data":1010}}}] 1
+
 
 # Coin
 give @a[tag=game_master] glistering_melon_slice[item_name='{"italic":false,"text":"Coin"}',lore=['{"text":"Worth its weight in gold!"}'],custom_model_data=900] 1
