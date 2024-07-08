@@ -39,4 +39,8 @@ scoreboard objectives add coin_flip dummy "Coin flip result"
 # Husher
 scoreboard objectives add activated dummy "Activated"
 
+# Gun
+scoreboard objectives add interact_warped minecraft.used:minecraft.warped_fungus_on_a_stick "Used warped fungus on a stick"
+scoreboard objectives add life dummy "Life"
+
 tellraw @a "Datapack: done!"

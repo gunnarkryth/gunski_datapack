@@ -51,5 +51,9 @@ execute as @e[tag=collector] at @s run function gunski_datapack:collector
 execute as @e[tag=new_husher] run function gunski_datapack:husher_setup
 execute as @e[tag=husher] at @s run function gunski_datapack:husher
 
+# Gun
+execute as @a[scores={interact_warped=1..}] at @s run function gunski_datapack:gun
+execute as @e[tag=bullet] at @s run function gunski_datapack:bullet
+
 
 execute as @e[type=minecraft:interaction] at @s run function gunski_datapack:interaction
