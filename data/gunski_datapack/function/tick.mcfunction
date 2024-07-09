@@ -52,8 +52,17 @@ execute as @e[tag=new_husher] run function gunski_datapack:husher_setup
 execute as @e[tag=husher] at @s run function gunski_datapack:husher
 
 # Gun
-execute as @a[scores={interact_warped=1..}] at @s run function gunski_datapack:gun
+
+execute as @a[scores={interact_warped=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{gun:1}}}}] at @s run function gunski_datapack:gun
+
 execute as @e[tag=bullet] at @s run function gunski_datapack:bullet
+
+execute unless score .ticks timer matches -1 run scoreboard players remove .ticks timer 1
+
+execute if score .ticks timer matches 0 run item modify entity @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{gun:1}}}}] weapon.mainhand {function:"set_components",components:{custom_model_data:900}}
+
+# execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{gun:1}}}}] if score .ticks timer matches 0 run item modify entity @s weapon.mainhand {function:"set_components",components:{custom_model_data:900}}
+
 
 
 execute as @e[type=minecraft:interaction] at @s run function gunski_datapack:interaction
