@@ -52,7 +52,7 @@ execute as @e[tag=new_husher] run function gunski_datapack:husher_setup
 execute as @e[tag=husher] at @s run function gunski_datapack:husher
 
 # Gun
-execute as @a[scores={interact_warped=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{gun:1}}}}] at @s run function gunski_datapack:gun
+execute as @a[scores={interact_warped=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{gun:1b}}}}] at @s run function gunski_datapack:gun
 
 execute as @e[tag=bullet] at @s run function gunski_datapack:bullet
 
