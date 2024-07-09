@@ -42,6 +42,7 @@ scoreboard objectives add activated dummy "Activated"
 # Gun
 scoreboard objectives add interact_warped minecraft.used:minecraft.warped_fungus_on_a_stick "Used warped fungus on a stick"
 scoreboard objectives add timer dummy "Timer"
-scoreboard players set .ticks timer 5
+scoreboard objectives add gun_cooldown dummy "Gun cooldown"
+scoreboard objectives add gun_bullet_life dummy "Bullet life"
 
 tellraw @a "Datapack: done!"
