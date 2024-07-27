@@ -1,3 +1,1 @@
-{
-  "values": ["gunski_datapack:load"]
-}
+{"values":["animated_java:global/on_load","animated_java:global/internal/gu/load","gunski_datapack:load"]}
